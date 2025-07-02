@@ -26,7 +26,7 @@ function ProductFormPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Lógica de validação
+
     const newErrors = [];
     if (!product.nome.trim()) newErrors.push("O nome é obrigatório.");
     if (!product.quantidade.trim()) newErrors.push("A quantidade é obrigatória.");
@@ -34,12 +34,12 @@ function ProductFormPage() {
 
     setErrors(newErrors);
 
-    // Se não houver erros, prossiga para salvar
+
     if (newErrors.length === 0) {
-      // 1. Lê os produtos que já existem no localStorage
+
       const produtosAtuais = JSON.parse(localStorage.getItem("produtos")) || [];
 
-      // 2. Cria o novo produto (convertendo os números corretamente)
+
       const novoProduto = {
         nome: product.nome.trim(),
         descricao: product.descricao.trim(),
@@ -47,13 +47,11 @@ function ProductFormPage() {
         preco: parseFloat(product.preco),
       };
 
-      // 3. Adiciona o novo produto à lista
       produtosAtuais.push(novoProduto);
 
-      // 4. Salva a lista inteira de volta no localStorage
       localStorage.setItem("produtos", JSON.stringify(produtosAtuais));
 
-      // 5. Navega para a tela inicial para ver o resultado
+
       navigate('/');
     }
   };
@@ -72,7 +70,7 @@ function ProductFormPage() {
             </ul>
           )}
           <form onSubmit={handleSubmit} className={styles.form}>
-            {/* O JSX do seu formulário continua aqui, sem alterações */}
+            {}
             <div className={styles.descriptionRow}>
               <span className={styles.uploadIconContainer}>
                 <img src={uploadImage} alt="Upload" />

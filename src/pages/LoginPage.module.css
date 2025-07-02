@@ -1,10 +1,10 @@
-/* src/pages/LoginPage.module.css */
+
 
 .pageContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh; /* Garante que o footer fique no fim da página */
+    min-height: 100vh; 
   }
   
   .mainContent {
@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+    flex-grow: 1;
   }
   
   .fotoLogo {
@@ -32,7 +32,7 @@
     background: linear-gradient(to bottom, #afc1d6, #7d97b3);
     width: 90%;
     max-width: 500px;
-    margin: 0 auto 20px auto; /* Adicionada margem inferior */
+    margin: 0 auto 20px auto;
     padding: 40px 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -150,7 +150,4 @@
     font-size: 1rem;
   }
   
-  /* Media queries podem ser mantidas como estão */
-  @media only screen and (max-width: 600px) {
-    /* ... seus media queries ... */
-  }
+  

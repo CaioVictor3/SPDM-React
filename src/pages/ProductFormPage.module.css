@@ -1,4 +1,4 @@
-/* src/pages/ProductFormPage.module.css */
+
 .header img {
     position: relative;
     width: 16em;
@@ -92,7 +92,7 @@
   
   .inputsRow input {
     flex-grow: 1;
-    min-width: 150px; /* Evita que fiquem muito pequenos */
+    min-width: 150px; 
   }
   
   .formButtons {
@@ -143,7 +143,7 @@
     margin-top: 1em;
   }
   
-  /* Media queries */
+
   @media only screen and (min-width: 600px) {
     .formButtons {
       flex-direction: row !important;

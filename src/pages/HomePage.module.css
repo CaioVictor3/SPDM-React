@@ -1,13 +1,11 @@
-/* Estilos para o layout da HomePage */
+
 .main {
     flex: 1;
     padding: 16px;
-    padding-bottom: 80px; /* Espaço para o footer não sobrepor o conteúdo */
+    padding-bottom: 80px; 
   }
   
-  .navProdutos {
-    /* Estilos do container de produtos, se houver */
-  }
+
   
   .navProdutos h2 {
     margin-bottom: 16px;

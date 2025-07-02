@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './LoginPage.module.css';
-import logoImage from '../assets/images/Logo.png'; // Caminho corrigido
+import logoImage from '../assets/images/Logo.png'; 
 import { useAuth } from '../context/AuthContext.jsx';
 
 function LoginPage() {

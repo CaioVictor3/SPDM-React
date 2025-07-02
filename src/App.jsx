@@ -1,5 +1,5 @@
 import React from 'react';
-// Remova BrowserRouter daqui, ele já está no main.jsx
+
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import HomePage from './pages/HomePage.jsx';

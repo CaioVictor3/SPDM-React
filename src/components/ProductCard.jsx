@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProductCard.module.css';
 
-// Recebe o `produto` e a função `onDelete` como props
+
 function ProductCard({ product, onDelete }) {
   return (
     <li className={styles.card}>

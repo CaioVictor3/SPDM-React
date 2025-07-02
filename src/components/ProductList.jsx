@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import styles from './ProductList.module.css';
 
-// Recebe a lista de produtos e a função de deletar
+
 function ProductList({ products, onDeleteProduct }) {
   if (products.length === 0) {
     return (
@@ -16,9 +16,9 @@ function ProductList({ products, onDeleteProduct }) {
     <ul className={styles.productList}>
       {products.map((produto) => (
         <ProductCard
-          key={produto.id} // Use um ID único se tiver, senão o nome ou índice
+          key={produto.id} 
           product={produto}
-          onDelete={() => onDeleteProduct(produto.id)} // Passa a função para o card
+          onDelete={() => onDeleteProduct(produto.id)} 
         />
       ))}
     </ul>
