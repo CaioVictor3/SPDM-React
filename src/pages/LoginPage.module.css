@@ -1,0 +1,156 @@
+/* src/pages/LoginPage.module.css */
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Garante que o footer fique no fim da página */
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+  }
+  
+  .fotoLogo {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .fotoLogo img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .form {
+    background: linear-gradient(to bottom, #afc1d6, #7d97b3);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 20px auto; /* Adicionada margem inferior */
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .camposinput {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .camposinput label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .camposinput input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .botaoEntrar {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .botaoEntrar button {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    padding: 12px 40px;
+    background-color: #6be38d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .botaoEntrar button:hover {
+    background-color: #53c776;
+  }
+  
+  .opcoes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .opcoes button {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .opcoes button:hover {
+    background-color: #ffffff;
+    color: #2e5c81;
+  }
+  
+  .footer {
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .validacao {
+    padding: 20px 25px;
+    margin: 0 auto 20px auto;
+    border-left: 6px solid #ff4d4d;
+    background-color: #fff2f2;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #b30000;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  .validacao li {
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .validacao li::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+  }
+  
+  /* Media queries podem ser mantidas como estão */
+  @media only screen and (max-width: 600px) {
+    /* ... seus media queries ... */
+  }

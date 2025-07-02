@@ -1,0 +1,30 @@
+.navBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff25; /* Um pouco de fundo para destacar */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  .navBottom button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    text-shadow: #325973 2px 2px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .buttonLabel {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }

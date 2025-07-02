@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* ==========================================================================
+   1. Reset e Padrões Globais
+   ========================================================================== */
+
+/*
+ * Um "reset" de CSS garante que todos os navegadores comecem com uma base
+ * de estilos consistente, removendo margens e paddings padrão.
+ * `box-sizing: border-box` simplifica o cálculo de larguras e alturas.
+ */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * Define a altura do HTML e do BODY para 100%, permitindo que layouts
+ * de página inteira (como um footer fixo) funcionem corretamente.
+ */
+html, body {
+  height: 100%;
+}
+
+/* ==========================================================================
+   2. Estilos do Corpo (Body) e Tipografia
+   ========================================================================== */
+
+/*
+ * Aqui definimos o estilo base para todo o projeto:
+ * - `font-family`: Escolhemos 'Montserrat' como a fonte principal, por ser moderna
+ * e ter sido usada na sua tela de login. O restante são alternativas.
+ * - `background`: Usamos o gradiente da sua tela inicial como fundo padrão.
+ * - `color`: Definimos uma cor de texto padrão para garantir a legibilidade.
+ */
+body {
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c3d2d9, #325973);
+  color: #333; /* Cor de texto padrão */
+}
+
+/*
+ * Garante que o elemento root do React ocupe no mínimo a altura
+ * total da tela, ajudando a posicionar o footer corretamente.
+ */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==========================================================================
+   3. Importação de Fontes Externas
+   ========================================================================== */
+
+/*
+ * Juntamos todas as fontes do Google que foram usadas nos seus projetos
+ * em uma única chamada @import no topo do arquivo.
+ */

@@ -1,0 +1,52 @@
+/* Estilos para o layout da HomePage */
+.main {
+    flex: 1;
+    padding: 16px;
+    padding-bottom: 80px; /* Espaço para o footer não sobrepor o conteúdo */
+  }
+  
+  .navProdutos {
+    /* Estilos do container de produtos, se houver */
+  }
+  
+  .navProdutos h2 {
+    margin-bottom: 16px;
+    color: white;
+    text-shadow: #8b9aa4 3px 3px 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .navProdutosTop {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+  }
+  
+  .navProdutosTop button {
+    background-color: #ffffff00;
+    border: none;
+    color: white;
+    padding: 8px;
+    font-size: 22px;
+    cursor: pointer;
+    text-shadow: #325973 2px 2px 6px;
+    margin-left: 16px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f800;
+    padding: 16px;
+  }
+  
+  .header input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+  }

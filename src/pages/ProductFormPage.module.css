@@ -1,0 +1,158 @@
+/* src/pages/ProductFormPage.module.css */
+.header img {
+    position: relative;
+    width: 16em;
+    top: 4em;
+    left: calc(50% - 8em);
+  }
+  
+  .main {
+    background: linear-gradient(#C3D2D9, #325973);
+    padding: 4em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .section h1 {
+    color: #f1f1f1;
+    font-size: 1.8em;
+    text-shadow: 3px 3px 5px #6b777e;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    margin-top: 1em;
+  }
+  
+  .form input,
+  .form textarea {
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding: .4em;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 2px;
+  }
+  
+  .form input:focus-visible,
+  .form textarea:focus-visible {
+    outline: none;
+    border-color: #3b7499;
+  }
+  
+  .descriptionRow {
+    display: flex;
+    width: 100%;
+    gap: 0.6em;
+    align-items: stretch;
+  }
+  
+  .uploadIconContainer {
+    background-color: #E4EBF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 2px;
+    padding: .2em;
+  }
+  
+  .uploadIconContainer img {
+    width: 8em;
+  }
+  
+  .descriptionRow textarea {
+    flex-grow: 1;
+    resize: vertical;
+    min-height: 8em;
+  }
+  
+  .inputsRow {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    justify-content: center;
+  }
+  
+  .inputsRow input {
+    flex-grow: 1;
+    min-width: 150px; /* Evita que fiquem muito pequenos */
+  }
+  
+  .formButtons {
+    display: flex;
+    width: 18em;
+    gap: 1em;
+    margin-top: 1.7em;
+    flex-direction: column;
+  }
+  
+  .formButtons button {
+    width: 100%;
+    border-radius: 12px;
+    background-color: white;
+    padding: .5em;
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px;
+    cursor: pointer;
+  }
+  
+  .formButtons button:first-child {
+    border: 2px solid indianred;
+    color: indianred;
+  }
+  
+  .formButtons button:last-child {
+    border: 2px solid #0767a7;
+    color: #0767a7;
+  }
+  
+  .footer {
+    color: #E4EBF0;
+    text-shadow: 3px 3px 5px #6b777e;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .errors {
+    list-style: none;
+    padding: 1em;
+    background-color: #fff2f2;
+    border-left: 5px solid indianred;
+    color: #b30000;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  /* Media queries */
+  @media only screen and (min-width: 600px) {
+    .formButtons {
+      flex-direction: row !important;
+      width: 24em !important;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .formButtons {
+      width: 32em !important;
+    }
+  }
